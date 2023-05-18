@@ -4,14 +4,14 @@ import Head from './Head';
 import Navbar from './Navbar';
 import Search from './Search';
 
-const Header = () => {
-    return (
-        <>
-            <Head></Head>
-            <Search></Search>
-            <Navbar></Navbar>
-        </>
-    );
+const Header = ({ cartItem }) => {
+  return (
+    <>
+      <Head></Head>
+      <Search cartItem={cartItem}></Search>
+      <Navbar></Navbar>
+    </>
+  );
 };
 
 export default Header;
